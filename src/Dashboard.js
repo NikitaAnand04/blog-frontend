@@ -52,7 +52,7 @@ export default function Dashboard() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log();
-    fetch('http://localhost:8000/blog', {
+    fetch('http://localhost:8080/blog', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -80,7 +80,7 @@ export default function Dashboard() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8000/blog", {
+    fetch("http://localhost:8080/blog", {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',

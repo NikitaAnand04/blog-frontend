@@ -30,7 +30,7 @@ function App() {
   const [expanded, setExpanded] = React.useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8000")
+    fetch("http://localhost:8080")
       .then(res => res.json())
       .then(
         (result) => {
